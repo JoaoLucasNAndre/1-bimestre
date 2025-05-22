@@ -1,0 +1,28 @@
+programa
+{
+	
+	funcao inicio()
+	{
+	
+        real limite_Peso = 50.0
+        real valor_Multa_Por_Quilo = 4.50
+        real peso_de_peixes
+        real excesso = 0
+        real multa = 0
+
+
+        escreva("Digite o peso de peixes pescados em kg: ")
+        leia(peso_de_peixes)
+
+
+        se (peso_de_peixes > limite_Peso)
+        {
+
+            multa = excesso * valor_Multa_Por_Quilo
+        }
+
+        escreva ("Peso total de peixes pescados: ", peso_de_peixes / 2, " kg")
+        escreva ("Excesso de peso: ", excesso / 2, " kg")
+        escreva ("Multa a ser paga: R$ ", multa / 2)
+	}
+}
