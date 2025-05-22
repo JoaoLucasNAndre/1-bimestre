@@ -1,0 +1,36 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		 
+        real PS5_em_dolar = 1300.0
+        real Dolar = 5.67
+        real preco_Livro = 69.90
+        real Reais
+        real PS5_em_reais
+        real reais_Faltando
+        real dolares_Faltando
+        inteiro Quantidade_de_Livros
+
+        escreva("Digite quanto dinheiro você tem em reais: ")
+        leia(Reais)
+
+        PS5_em_reais = PS5_em_dolar * Dolar
+
+        reais_Faltando = PS5_em_reais - Reais
+        se (reais_Faltando < 0)
+        {
+            reais_Faltando = 0
+        }
+
+        
+        dolares_Faltando = reais_Faltando / Dolar
+
+       Quantidade_de_Livros = PS5_em_reais / preco_Livro
+
+        escreva ("Está faltando: ", dolares_Faltando / 2, " Dolares " )
+        escreva ("Aestá faltando: ", reais_Faltando / 2, " Reais ")
+        escreva ("livros Harry Potter poderiam ser comprado ", Quantidade_de_Livros)
+	}
+}
